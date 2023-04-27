@@ -1,0 +1,19 @@
+header{
+    background:lightgrey;
+    padding: 1em;
+}
+main{
+    width: 80%;
+    margin: auto;
+    box-shadow: lightgrey 0 0 100px 1px;
+}
+h2{
+    background: black; color:white;
+    padding:.5em;
+}
+section:nth-child(even){
+    background: aliceblue;
+}
+#exercices article{
+    display: flex; justify-content: space-around;
+}

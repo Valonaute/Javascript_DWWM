@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script src="js/display.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Hello World</h2>
+                <code>
+                    console.log("Hello World");
+                </code>
+                <button>Hello world!</button>
+            </section>
+            <section>
+                <h2>Variable</h2>
+                <article>
+                    <h3>Variable : Chaîne de caractères</h3>
+                    <p>
+                        <code>let animal = "Chat";</code>
+                    </p>
+                </article>
+                <article>
+                    <h3>Variable a scope étendu (obsolète)</h3>
+                    <code>var animalObsolete = "N'utilisez pas var";</code>
+                </article>
+                <article>
+                    <h3> Constante </h3>
+                    <code>
+                        const PI_CONSTANTE = 3.14159265358979323846264338327950288419716939937510582;
+                    </code>
+                </article>
+                <article>
+                    <h3>Variable numérique - Number</h3>
+                    <code>let age = 19;</code>
+                </article>
+                <article>
+                    <h3>>Variable booléene - Boolean</h3>
+                    <code>let superUser = true;</code>
+                </article>
+                <article>
+                    <h3>Réaffecter / écraser / changer la valeur d'une variable</h3>
+                    <pre><code>
+let animalB = chien;
+animal = "Chien";
+                    </code></pre>
+                </article>
+                    
+//let animal = "Tardigrade"; //SyntaxError
+function displayAnimal(){
+    console.log(animal);
+}
+                </article>
+            </section>
+            <section>
+                <h2>Increment</h2>
+                <pre><code>
+function increment(){
+    
+    //Incrémentation
+    age ++;
+    console.log(age)
+    //Décrémentation
+    age --;
+    
+    // Incrémentation avec choix de la valeur
+    age += 4;
+    console.log(age);
+    
+    let nombreMalTypé = "14";
+    console.log(age + nombreMalTypé);
+}
+                </code></pre>
+            <section>
+            <section>
+                <h2>Concaténation</h2>
+                <pre><code>
+                    function concatenation(){
+                        
+                        // Concaténations
+                        console.log("J'ai " + age + " ans et j'ai un " + animal + "il s'appelle \"Medor\"");
+                        console.log('il s\'appelle "medor"')
+                        
+                        console.log(`J'ai ${age}, et j'ai un ${animal} et il s'appelle "Médor"`);
+                    }
+                    //Opérateurs Arithmétiques
+                    //+-*/%
+                </code></pre>
+            </section>
+            <section>
+                <h2>Tableaux JavaScript : Array</h2>
+                <pre><code>
+
+                    // Array JavaScript
+                        
+                    let fruits = ["Pomme", "Poire", "Prune"];
+                        
+                    console.table(fruits);
+                    
+                    // Acceder a un élément par son index
+                    
+                    console.log(fruits[2]);
+                    
+                    // Ajouter des éléments à l'Array
+                    fruits.push("Kiwi", "Banane");
+                    console.table(fruits);
+                    
+                    // Supprimer le dernier élément du tableau
+                    fruits.pop();
+                    console.table(fruits);
+                    
+                    // Supprimer le premier élément du tableau
+                    fruits.shift();
+                    console.table(fruits);
+                    
+                    fruits[2]= "Orange";
+                    fruits.push("Raisin", "Durian", "Litchi", "Fraise");
+                </code></pre>
+            </section>
+            
+            function arrayTable(){
+            
+                //
+                console.clear()
+                console.table(fruits);
+                // Choisir un index et supprimer / remplacer les valeurs suivantes splice(indexDeDepart,nbreDElementsConcernes,valeurDuRemplacement);
+                fruits.splice(4,1, "Framboise");
+                
+                // Classer les valeurs du tableau par ordre alphanumérique
+                fruits.sort();
+                console.table(fruits);
+                
+                //Connaitre la longueur du tableau
+                console.log(fruits.length);
+            }
+            
+            //Objets JS
+            
+            let voiture = {
+                annee : 2002,
+                marque : "Audi",
+                modele : "RS6"
+            }
+            
+            //console.log(voiture.marque);
+            
+            //Conditions if ... else
+            
+            function verifAge(){
+                let majeur = confirm("Si vous êtes mineur, vous n'avez pas le droit d'accéder au site");
+                
+                if(majeur){
+                    alert("Bienvenue");
+                } else {
+                    alert("Non");
+                    window.location.href="https://google.fr";
+                }
+            }
+            
+            function weather(){
+            
+                let meteo = "Beau temps"; 
+                let vent = "Pas de vent";
+                
+                if(meteo === "Beau temps" && vent === "pas de vent"){
+                    monitor.innerHTML += "Il fait beau, je peux sortir en short";
+                }else if(meteo === "Beau temps" && vent !== "pas de vent"){
+                    monitor.innerHTML += "Il fait beau mais en fait on va mettre un pantalon";
+                }
+            }
+            
+            //Conditions switch
+            
+            function checkColor(couleur){
+            
+                couleur = "Bleu";
+                
+                switch(couleur){
+                    case "Bleu":
+                        monitor.innerHTML += "<b>Vous avez besoin de Rouge</b>";
+                    break;
+                    case "Orange":
+                        monitor.innerHTML += "<b>Vous avez besoin de Orange</b>";
+                    break;
+                    default:
+                        monitor.innerHTML += "<b> Vous avez besoin de Lunettes</b>";
+                }
+            }
+            //checkColor("Orange");
+            
+            //Opérateur ternaire
+            //if(age>=18){ console.log("Bonjour monsieur")} else {console.log("Bonjour petit")}
+            
+            const salutations = () =>{
+                age>=18 ? console.log("Bonjour monsieur") : console.log("Bonjour petit");
+            }
+            
+            function fonctionsAuto(){
+                (function autofonction(parametres){
+                    console.log("Fonction auto " + parametres);
+                })("activée");
+                (function (e){
+                    console.log("fonction" + e);
+                })(" anonyme");
+                ((e)=>{
+                    console.log("fonction" + e);
+                })(" fléchée anonyme");
+            }
+            
+            let pieceDispo = "turbo";
+            
+            function reparerVoiture(voiture){
+                if(pieceDispo === "turbo"){
+                    console.log("Mise au garage de " + voiture);
+                    voiture += " réparée";
+                    return true;
+                    console.log("Code inaccessible");
+                } else {
+                    return false;
+                }
+            }
+            
+            if(reparerVoiture()){
+                monitor.innerHTML = "On peut rouler";
+            } else {
+                monitor.innerHTML = "La voiture reste au garage";
+            }
+            
+            <section>
+                <h2>Moniteur</h2>
+                <p id="monitor"></p>  
+            </section>
+            <section>
+                <h2>Conditions</h2>
+                <p></p>
+            </section>
+        </main>
+    </body>
+</html>

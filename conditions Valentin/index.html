@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conditions: vague d'exercices</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Conditions</h1>
+            <nav>
+            </nav>
+        </header>
+        <main>
+            <section id="enonce">
+                <h2>Enoncé</h2>
+                <article>
+                    <h3>Point Cours : Les fonctions Prompt() et Confirm()</h3>
+                    <aside>
+                        <p>Pour que l’utilisateur puisse entrer la valeur d'une variable à la volée : variableARemplir = prompt("texte à afficher");</p>
+                        <p>Lors de l'exécution de ce code, une fenêtre s'ouvrira, indiquant à l'utilisateur "texte à afficher" et proposant un champ de texte. La valeur que prendra la variable sera celle indiquée dans le champ de texte.</p>
+                        <p>La fonction variableARemplir = confirm("texte à afficher"); fonctionne de manière similaire, mais au lieu d'un champ de texte, la fenêtre propose deux boutons : "ok" et "annuler". Si l'utilisateur clique sur "ok", variableARemplir prendra la valeur True, s'il clique sur "annuler", elle prendra la valeur False.</p>
+                    <ol>
+                        <li>
+                            <h5>Roulette Russe</h5>
+                            Utilisez un prompt() pour que l'utilisateur vous donne un nombre de 1 a 6. Si le nombre vaut le même que celui qu'on a choisi, Game Over.
+                        </li>
+                        <li>
+                            <h5>Devine a qui je pense</h5>
+                            Utilisez un prompt() pour que l'utilisateur essaie de deviner votre personnage. S'il échoue, proposez un indice. Il pourra ensuite réessayer via f5(réactualiser la page)
+                        </li>
+                        <li>
+                            <h5>Organisation de Dîner</h5>
+                            Demandez un nombre à l'utilisateur à l'aide de la fonction prompt(), ce sera le nombre de personnes invitées à un repas. En fonction de ce nombre, indiquez s'il s'agit d'un repas en solitaire, d'un repas intime (4 personnes max), d'un rassemblement (12 personnes max) ou d'un banquet. Faites-en sorte que les saisies de nombres négatifs affichent également quelque chose de logique.
+                        </li>
+                    </ol>
+                    <h4>Options</h4>
+                    <ol>
+                        <li>Ajoutez plusieurs niveaux a la Roulette Russe</li>
+                        <li>Donnez plusieurs indices en cas d'échecs au Devine a qui je pense. Créez un game Over. </li>
+                        <li>Réaliser, à l’aide de conditions, des boucles qui comptent de 0 à 10 et qui n’affichent que les nombres pairs. Une avec une boucle while et une avec une boucle for.</li>
+                    </ol>
+                    </aside>
+                </article>
+            </section>
+            <section id="exercice">
+            </section>
+            <button id="btn"> Jouer à la roulette Russe </button>
+            <button id="btn1"> Jouer au jeu personnage </button>
+            <button id="btn2"> Jouer au jeu du diner </button>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>

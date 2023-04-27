@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: rgb(15, 15, 15);
+    color: rgb(155, 155, 155);
+    text-align: center;
+}
+header {
+    background-color: rgb(38, 38, 190);
+    min-height: 14vh;
+    position: fixed;
+    min-width: 100vw;
+    top: 0;
+    border: 2px solid greenyellow;
+}
+h1 {
+    margin-bottom: 3vh;
+}
+main {
+    margin-top: 14vh;
+}
+footer {
+    background-color: rgb(56, 56, 56);
+    min-height: 10vh;
+}
+h4 {
+    padding-top: 2vh;
+}
+nav a {
+    color: greenyellow;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 1vw;
+    border-radius: 20px;
+    margin: 2vw;
+}
+button {
+    background-color: rgb(38,38, 190);
+    color: greenyellow;
+    text-decoration: underline;
+    border-radius: 25px;
+    max-height: 15vh;
+    margin-top: 20vh;
+    border-color: greenyellow;
+}
+img {
+    border-radius: 20px;
+    max-height: 50vh;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+#choisir {
+    margin-top: 1vh;
+    padding: 2.5vw;
+}

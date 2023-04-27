@@ -1,0 +1,15 @@
+.identity{
+    background : #222;
+    color : #eee;
+    margin : 0;
+    padding : 1em;
+    text-align : center;
+}
+
+.fancyTitle{
+    color:indianred;
+    font-weight: 100;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}

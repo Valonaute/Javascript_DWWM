@@ -1,0 +1,25 @@
+*{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+header{
+    background:lightgrey;
+    padding: 1em;
+}
+main{
+    width: 80%;
+    margin: auto;
+    box-shadow: lightgrey 0 0 100px 1px;
+}
+nav{display: flex; justify-content: flex-end;}
+nav a{margin-left: 2em; text-decoration: none; color:darkslategray;}
+nav a:hover{margin-left: 2em; text-decoration: none; color:white;}
+h2{
+    background: black; color:white;
+    padding:.5em;
+}
+section:nth-child(even){
+    background: aliceblue;
+    width: 100%;
+}
+#exercices article{
+    display: flex; justify-content: space-around;
+}
+p{word-wrap: break-word;}

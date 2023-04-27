@@ -1,0 +1,80 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.2em;
+    margin:0;
+}
+header{
+    background: steelblue;
+    border-radius: 0 0 15px 15px;
+    padding:0;
+}
+h1{
+    padding:1rem;
+    color: aliceblue;
+}
+nav{
+    background: lightgray;
+    padding:0;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    width: 100%; 
+    transition: background 1s;
+    transition: color .5s;
+    text-align: center;
+}
+a:hover{
+    background-color: darkslategray;
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+article{
+    background: aliceblue;
+    padding: 0 0 1em 0;
+    box-shadow: 0 0 10px;
+    margin:10rem auto;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+h3{
+    background: seagreen;
+    padding:1rem;
+    margin-bottom:1rem;
+    border-radius: 15px 15px 0 0;
+}
+#jobDisplay{ 
+    background: lightblue;
+    padding:1rem;
+}
+#ageDisplay{
+    padding:1rem;
+}
+#posteDisplay{
+    display: block;
+    font-style: italic;
+    color: steelblue;
+    font-weight: 700;
+    padding:1rem auto;
+    background: black;
+    margin:0;
+    padding:1rem;
+    border-radius: 0 0 15px 15px;
+}
+
+code{
+    background: #333;
+    color:#ddd;
+    padding:0.1em;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 5em;
+    display: inline-block;
+}

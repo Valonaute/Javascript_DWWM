@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Objet Model (DOM)</title>
+        <link rel="stylesheet" href="css/dom.css">
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+        </header>
+        <main>
+            <section id="ciblage">
+                <h2>Ciblage d'éléments</h2>
+                <article>
+                    <ol>
+                        <li></li>
+                        <li class="red">Second élément de liste</li>
+                        <li>Troisième élément de liste</li>
+                        <li class="red">Quatrième élément de liste</li>
+                    </ol>
+                </article>
+            </section>
+            <section>
+                <h2>Evenements</h2>
+                <button>Cliquez-moi</button>
+                <button onclick="obsolete()">Cliquez-moi OBSOLETE</button>
+                <button id="color">Changer de couleur</button>
+
+                <article>
+                    <h3>Récupération des données des formulaires</h3>
+                    <input type="text">
+                    <p></p>
+                </article>
+                <article>
+                    <h3>Pertinence des évenements</h3>
+                    <select name="options" id="">
+                        <option value="rebeccapurple">Option 1</option>
+                        <option value="steelblue">Option 2</option>
+                        <option value="seagreen">Option 3</option>
+                    </select>
+                    <p id="selectResult"></p>
+                </article>
+            </section>
+            <section>
+                <h2>Gestion du temps</h2>
+                <p id="timeMonitor">
+                    
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Cours du Jeudi</p>
+        </footer>
+        <script src="js/dom.js"></script>
+    </body>
+</html>

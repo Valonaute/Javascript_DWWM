@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+body{
+    background: url("https://picsum.photos/id/174/1980/1280")fixed;
+}
+header{
+    background: black;
+    color: gold;
+}
+h1{
+    font-weight: 100;
+    margin:0;
+    text-align: right;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+nav a{
+    padding-left: 1em;
+}
+a{
+    color: skyblue;
+    display: block;
+    text-align: center;
+}
+main{
+    width: 70%;
+    margin: auto;
+    backdrop-filter: blur(15px);
+    padding: 1em;
+    offset: 1px white solid;
+    border-radius: 10px;
+}
+h2,h3, p, #aPropos article{
+    margin: 1em auto;
+}
+button{
+    padding: 1em;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px lightyellow;
+}
+.more{
+    display: none;
+}
+.reveal{
+    display: block;
+    text-align: center;
+}
+#news article:nth-child(even){
+    background: aliceblue;
+    padding: 1em;
+    border-radius: 10px;
+}
+#aPropos article{
+    background: #333; 
+    color: #eee;
+    padding: 1em;
+    width: 50%;
+    border-radius: 10px;
+}

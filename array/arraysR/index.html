@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Array</h1>
+            <nav><a href="../index.html">Retour</a></nav>
+        </header>
+        <main>
+            <section id="enonce">
+                <h2>Exercices</h2>
+                <article>
+                    <h3>Base</h3>
+                    <ol>
+                        <li>Créez la fonction soustraction(nombre1, nombre2), prenant donc deux nombres en argument et qui retourne la soustraction de ces 2 nombres. Testez votre fonction en affichant son résultat.</li>
+                        <li>Créez un tableau qui contient quatre éléments de votre choix. Afficher le second élément du tableau</li>
+                        <li>Utilisez maintenant une boucle pour afficher tout le contenu du tableau.</li>
+                        <li>Créez une fonction lectureTableau(tableau) qui prend un tableau en argument et qui en affiche tout le contenu à l'aide d'une boucle.</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3>Intermédiaire</h3>
+
+                    <h4>Point Cours : Obtenir une lettre de l'alphabet aléatoirement</h4>
+                    <i>Pour générer une lettre aléatoire il faut :</i>
+                    <ul>
+                        <li>Avoir la liste de toutes les lettres</li>
+                        <li>En sélectionner une au hasard</li>
+                    </ul>
+
+                    <h5>Pour avoir la liste des lettres :</h5>
+                    <ul>
+                        <li>
+                            Créez une variable contenant toutes les lettres (alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";)
+                        </li>
+                        <li>
+                            On peut utiliser une variable contenant une chaîne de caractères de manière similaire à un tableau : <br>alphabet[x] renverra la (x+1)ième lettre de l'alphabet !
+                        </li>
+                    </ul>
+                    Pour choisir une lettre aléatoire :
+                    Il suffit d’utiliser la ligne de code alphabet[Math.floor(Math.random()*26)]. Math.floor(Math.random()*26 qui renvoyant un nombre entre 0 et 25.
+                    </i>
+                    <details>
+                        <summary>
+                            <b>Précisions sur le fonctionnement de l'aléatoire en JavaScript</b>    
+                        </summary>
+                        Explication : Math.random() renvoie un nombre aléatoire entre 0 et 1 (par exemple 0.7861447615), si on le multiplie par X, on obtient un nombre décimal aléatoire entre 0 et X. Et on injecte ce nombre dans Math.floor() qui enlève la partie décimale des nombres. On obtient donc un nombre aléatoire entre 0 et X-1.
+                        Pour ceux qui aiment être précis : Vu qu'il s'agit d'un nombre aléatoire obtenu par algorithme, il ne s'agit pas réellement d'un nombre aléatoire, mais d'un nombre pseudo aléatoire. Dans notre cas, ça n'a aucune importance.
+                    </details>
+
+                    <h4>Exercice:</h4>
+                    <p>Réaliser une fonction motAleatoire() génératrice de mots de 7 lettres aléatoires. Par exemple "ADGRUTP", "HYETRPO" ou encore "JZCZXSP"</p>
+                </article>
+            </section>
+            <section id="exerciceA">
+                <h2>Base</h2>
+            </section>
+            <section id="exerciceB">
+                <h2>Intermédiaire</h2>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;Exercice Arrays</p>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="../nav.js"></script>
+    </body>
+</html>

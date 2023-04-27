@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+header {
+    margin: 5vh;
+    padding: 3vh;
+    border-radius: 20px;
+}
+main {
+    margin: 10px;
+}
+footer {
+    margin: 5vh;
+    padding: 4vh;
+}
+body {
+    background-color: black;
+}

@@ -1,0 +1,18 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: black;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+p{text-align: right;}
+.fin{
+    color: lawngreen;
+    font-size: 2em;
+}
+.pending{
+    color: indianred;
+    font-size: 1.5em;
+}

@@ -1,0 +1,43 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    box-sizing: border-box;
+}
+article{
+    padding: 1em;
+    margin: 1em;
+    background: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    overflow-x: auto;
+}
+h1, h2, h3{
+    margin:1em;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+code{
+    background: black;
+    padding: .1em;
+    color: lightcyan;
+    border-left: 5px gray solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+pre{
+    border-left: 5px gray solid;
+    background: black;
+}
+#monitor{
+    background: olive;
+    font-family: monospace;
+    font-weight: 900;
+    padding: 1em;
+    border: black solid 4px;
+    width: 60%;
+    margin: auto;
+}
+.data{
+    color: aliceblue;
+}
